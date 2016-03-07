@@ -1,0 +1,50 @@
+<ion-view>
+	<ion-content class="info_background">
+		<div class="info_basic_info">
+			<div class="info_item">
+				<div class="header" >
+					<label >
+						<span>创建新兼职</span>
+					</label>
+				</div>
+				<div class="content">
+					<label class="item item-input my-item row">
+						<span class="col col-20">兼职名称:</span>
+					    <input type="text" class="my-input" ng-model="info.name">
+					</label>
+					<label class="item item-input my-item row">
+						<span class="col col-20">开始时间:</span>
+					    <input type="text" class="my-input" ng-model="info.start_time" placeholder="输入格式必须为2016-03-01">
+					</label>
+					<label class="item item-input my-item row">
+						<span class="col col-20">结束时间:</span>
+					    <input type="text" class="my-input" ng-model="info.end_time" placeholder="输入格式必须为2016-03-01">
+					</label>
+					<label class="item item-input my-item row">
+						<span class="col col-20">兼职地点:</span>
+					    <input type="text" class="my-input"  ng-model="info.location">
+					</label>
+					<label class="item item-input my-item row">
+						<span class="col col-20">薪资水平:</span>
+					    <input type="text" class="my-input row"  ng-model="info.price">
+					</label>
+					<label class="item item-input my-item row">
+						<span class="col col-20">兼职人数:</span>
+					    <input type="text" class="my-input"  ng-model="info.wanted_number">
+					</label>
+					<label class="item item-input my-item row">
+						<span class="col col-20">兼职详情:</span>
+					    
+					</label>
+					<label class="item item-input my-item row">
+						<textarea type="text" class="my-input my-textarea" placeholder="多行输入"  ng-model="info.detail"></textarea>
+					</label>
+				</div>
+			</div>
+				<span ng-show="error_message" class="error_message message">{{error_message}}</span>
+				<button class="info_button button button-calm" ng-click="newJianzhi()">完成</button>
+			</div>
+			
+		</div>
+	</ion-content>
+</ion-view>
